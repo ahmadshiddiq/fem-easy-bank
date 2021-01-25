@@ -27,10 +27,38 @@ body {
   }
 }
 
+// Text
 h1,
 h2,
 h3 {
+  font-weight: 300;
+  line-height: 1.15;
+  color: $darkBlue;
   margin-top: 0;
+}
+
+h1 {
+  font-size: 2.31rem;
+  margin-bottom: 1.5rem;
+
+  @include breakpoint-up(large) {
+    font-size: $font-xlg;
+  }
+}
+
+h2 {
+  font-size: 1.875rem;
+  margin-bottom: 1.5625rem;
+
+  @include breakpoint-up(large) {
+    font-size: 2.25rem;
+    margin-bottom: 2.25rem;
+  }
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 2.25rem;
 }
 
 a,
@@ -46,17 +74,31 @@ a:hover {
 
   &--pall {
     padding: {
-      top: 2.25rem;
+      top: 4.375rem;
       right: 1.5rem;
-      bottom: 2.25rem;
+      bottom: 4.375rem;
       left: 1.5rem;
+    }
+
+    @include breakpoint-up(large) {
+      padding: {
+        top: 6rem;
+        bottom: 6rem;
+      }
     }
   }
 
   &--py {
     padding: {
-      top: 2.25rem;
-      bottom: 2.25rem;
+      top: 4.375rem;
+      bottom: 4.375rem;
+    }
+
+    @include breakpoint-up(large) {
+      padding: {
+        top: 6rem;
+        bottom: 6rem;
+      }
     }
   }
 
@@ -67,7 +109,11 @@ a:hover {
     }
   }
   &--pt {
-    padding-top: 2.25rem;
+    padding-top: 4.375rem;
+
+    @include breakpoint-up(large) {
+      padding-top: 6rem;
+    }
   }
 
   &--pr {
@@ -75,7 +121,11 @@ a:hover {
   }
 
   &--pb {
-    padding-bottom: 2.25rem;
+    padding-bottom: 4.375rem;
+
+    @include breakpoint-up(large) {
+      padding-bottom: 6rem;
+    }
   }
 
   &--pl {
