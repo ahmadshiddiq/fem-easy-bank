@@ -651,7 +651,7 @@ button:hover,
         grid-template-columns: 2fr 1fr 1fr 3fr;
     -ms-grid-rows: 1fr auto;
         grid-template-rows: 1fr auto;
-        grid-template-areas: "logo links1 links2 cta" "social links1 links2 copyright";
+        grid-template-areas: "logo links1 links2 cta" "social links1 links2 copyright";
     gap: 1rem;
     justify-items: start;
   }
@@ -792,5 +792,9 @@ button:hover,
     -ms-grid-column-align: end;
         justify-self: end;
   }
+}
+
+.attribution {
+  padding: 10px;
 }
 /*# sourceMappingURL=style.css.map */
